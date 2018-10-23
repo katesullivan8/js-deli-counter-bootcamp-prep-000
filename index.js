@@ -1,7 +1,7 @@
 
 function takeANumber(arr, name) {
   arr.push(name);
-  return `Welcome, ${name}. You are number ${arr.indexOf(name) + 1}`
+  return `Welcome, ${name}. You are number ${arr.indexOf(name) + 1} in line.`
 };
 
 function nowServing(arr) {
