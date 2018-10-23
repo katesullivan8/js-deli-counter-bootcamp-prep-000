@@ -10,7 +10,7 @@ function nowServing(arr) {
   }
   let current = arr[0]
   arr.shift()
-  return 'Currently serving ${current}.'
+  return `Currently serving ${current}.`
 }
 
 function currentLine(arr) {
@@ -24,5 +24,3 @@ function currentLine(arr) {
 
   return `The line is currently: ` + orderedList.slice(0, -2);
 }
-
-console.log(currentLine(["Bill", "Jane", "Ann"]))
