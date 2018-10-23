@@ -19,7 +19,7 @@ function currentLine(arr) {
   }
   let orderedList = '';
   for (let i = 0; i < arr.length; i++) {
-    orderedList += `${i+1}. ${arr[i]}`
+    orderedList += `${i+1}. ${arr[i]}, `
   }
   return `The line is currently: ` + orderedList;
 }
