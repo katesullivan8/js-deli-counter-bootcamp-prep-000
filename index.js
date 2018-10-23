@@ -22,7 +22,7 @@ function currentLine(arr) {
     orderedList += `${i+1}. ${arr[i]}, `
   }
 
-  return `The line is currently: ` + orderedList[-1];
+  return `The line is currently: ` + orderedList;
 }
 
 console.log(currentLine(["Bill", "Jane", "Ann"]))
