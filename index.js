@@ -1,6 +1,7 @@
 
 function takeANumber(arr, name) {
   arr.push(name);
+  return arr
 };
 
 function nowServing(arr) {
