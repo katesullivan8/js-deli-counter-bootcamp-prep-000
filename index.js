@@ -21,7 +21,7 @@ function currentLine(arr) {
   for (let i = 0; i < arr.length; i++) {
     orderedList += `${i+1}. ${arr[i]}, `
   }
-  orderedList -= orderedList[-1]
+  orderedList = orderedList.slice(0, -1)
   return `The line is currently: ` + orderedList;
 }
 
