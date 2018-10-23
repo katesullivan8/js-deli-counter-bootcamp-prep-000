@@ -18,7 +18,7 @@ function currentLine(arr) {
     return 'The line is currently empty.'
   }
   let orderedList = '';
-  for (let i == 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     orderedList += `${i+1}. ${arr[i]}`
   }
   return `The line is currently: ` + orderedList;
