@@ -3,11 +3,25 @@ function takeANumber(arr, name) {
   arr.push(name);
 };
 
-katzDeli = [];
-otherDeli = ["Steven", "Blake", "Avi"];
+function nowServing(arr) {
 
-takeANumber(katzDeli, 'Ada');
-takeANumber(katzDeli, 'Grace');
-takeANumber(katzDeli, 'Kent');
+  if (arr.length == 0) {
+    return 'There is nobody waiting to be served!'
+  }
+  let current = arr[0]
+  arr.shift()
+  return 'Currently serving ${current}.'
+}
 
-console.log(katzDeli)
+function currentLine(arr) {
+  if (arr.length === 0) {
+    return 'The line is currently empty.'
+  }
+  let orderedList = '';
+  for (let i == 0; i < arr.length; i++) {
+    orderedList += `${i+1}. ${arr[i]}`
+  }
+  return `The line is currently: ` + orderedList;
+}
+
+console.log(currentLine(["Bill", "Jane", "Ann"]))
